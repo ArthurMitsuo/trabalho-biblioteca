@@ -1,4 +1,4 @@
-const pessoas = require('../db/banco.js ');
+const pessoas = require('../db/mongoDB');
 class PessoaController {
 listar(req, res){
     res.json(pessoas);
