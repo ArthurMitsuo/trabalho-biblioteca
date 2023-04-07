@@ -1,9 +1,13 @@
 const pessoaController = require('./controllers/pessoaController');
 const express = require('express');
+const produtoRouter = require('./routes/produtoRouter');
+
 
 const srv = express();
 
 srv.use(express.json());
+
+srv.use('/produtos', produtoRouter);
 
 srv.get('/pessoas', pessoaController.listar);
 srv.get('/pessoas/:id', pessoaController.buscarPorId);
