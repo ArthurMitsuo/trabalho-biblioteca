@@ -1,0 +1,4 @@
+Links úteis:
+
+MDN - https://developer.mozilla.org/pt-BR/docs/Learn/Server-side/Express_Nodejs/mongoose
+

@@ -4,7 +4,7 @@ const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
 const livroSchema = new Schema({
-    codigoLivro: Number,
+    idLivro: Number,
     nome: String,
     autor: String,
     sinopse: String,

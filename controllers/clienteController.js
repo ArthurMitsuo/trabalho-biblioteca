@@ -1,6 +1,7 @@
 const clientes = require('../db/mongoDB');
+const clienteModel = require('../models/clienteModel');
 
-class clienteController {
+class ClienteController {
 listar(req, res){
     res.json(clientes);
 }

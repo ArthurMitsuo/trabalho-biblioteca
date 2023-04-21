@@ -1,34 +1,21 @@
-const pessoaController = require('./controllers/pessoaController');
+require('./db/mongoDB');
 const express = require('express');
-const livroRouter = require('./routes/livroRoutes');
-
-
-const livroRouter = require('./routes/livroRoutes');
-
-const clienteController = require('./controllers/clienteController');
-const express = require('express');
-
 const mongoose = require('mongoose');
 
+//Importando os routes
+const livroRouter = require('./routes/livroRoutes');
+const clienteRouter = require('./routes/clienteRoutes');
+
+//definindo a constante srv como instância do objeto requerido do express
 const srv = express();
 
-srv.use(express.json());
+//srv.use(express.json());
 
+//Solicitando que o servidor utilize os routers conforme os valor pós / na URL
 srv.use('/livro', livroRouter);
+srv.use('/cliente', clienteRouter);
 
-srv.get('/pessoas', clienteController.listar);
-srv.get('/pessoas/:id', clienteController.buscarPorId);
-srv.post('/pessoas', clienteController.salvar);
-srv.put('/pessoas/:id', clienteController.atualizar);
-srv.delete('/pessoas/:id', clienteController.remover);
-
+//Verificando se o servidor está de pé na porta 3000, se sim, irá imprimir no console
 srv.listen(3000, () => {
 console.log('Servidor rodando em http://localhost:3000');
 });
-
-
-//Testando conexão com o banco
-require('./db/mongoDB');
-const ModeloExemplo = mongoose.model("Exemplo", {name: String});
-const objetoExemplo = new ModeloExemplo({name: "Um exemplo"});
-objetoExemplo.save().then(() => console.log("Salvou!"));
