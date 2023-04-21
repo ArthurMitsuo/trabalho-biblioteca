@@ -1,6 +1,6 @@
 const pessoaController = require('./controllers/pessoaController');
 const express = require('express');
-const produtoRouter = require('./routes/produtoRouter');
+const produtoRouter = require('./routes/produtoRoutes');
 
 
 const srv = express();
