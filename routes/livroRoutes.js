@@ -1,16 +1,16 @@
 // ./routes/produtoRouter.js
-const produtoController = require('../controllers/livroController');
+const livroController = require('../controllers/livroController');
 
 const express = require('express');
 const router = express.Router();
 
-router.get('/', produtoController.listar);
-router.get('/:id', produtoController.buscarPorCodigo);
+router.get('/', livroController.listar);
+router.get('/:id', livroController.buscarPorCodigo);
 
-router.post('/', produtoController.salvar);
+router.post('/', livroController.salvar);
 
-router.put('/:id', produtoController.atualizar);
+router.put('/:id', livroController.atualizar);
 
-router.delete('/:id', produtoController.excluir);
+router.delete('/:id', livroController.excluir);
 
 module.exports = router;

@@ -1,4 +1,4 @@
-// ./routes/produtoRouter.js
+/* // ./routes/produtoRouter.js
 const produtoController = require('../controllers/produtoController');
 const express = require('express');
 const router = express.Router();
@@ -7,4 +7,4 @@ router.get('/:codigo', produtoController.buscarPorCodigo);
 router.post('/', produtoController.salvar);
 router.put('/:codigo', produtoController.atualizar);
 router.delete('/:codigo', produtoController.excluir);
-module.exports = router;
+module.exports = router; */

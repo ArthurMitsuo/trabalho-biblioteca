@@ -1,9 +1,7 @@
-<<<<<<< HEAD
-=======
 const pessoaController = require('./controllers/pessoaController');
 const express = require('express');
-const produtoRouter = require('./routes/produtoRoutes');
->>>>>>> 60f1ed64127607094e7a3f9a66300ff63f6ef198
+const livroRouter = require('./routes/livroRoutes');
+
 
 const livroRouter = require('./routes/livroRoutes');
 
