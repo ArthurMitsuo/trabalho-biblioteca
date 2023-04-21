@@ -1,4 +1,4 @@
-const produtoModel = require('../models/produtoModel');
+const produtoModel = require('../models/livroModel');
 class ProdutoController {
     async listar(req, res){
         const resultado = await produtoModel.find({});
@@ -26,8 +26,8 @@ class ProdutoController {
     }
     async excluir(req, res){
         const codigo = req.params.codigo;
-        await produtoModel.findOneAndDelete(({'codigo': codigo});
+        await produtoModel.findOneAndDelete(({'codigo': codigo}));
         res.status(200).send('Excluído!');
     }
 }
-        module.exports = new ProdutoController()    
+module.exports = new ProdutoController();    
