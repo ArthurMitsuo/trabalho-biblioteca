@@ -1,4 +1,10 @@
 Links úteis:
 
-MDN - https://developer.mozilla.org/pt-BR/docs/Learn/Server-side/Express_Nodejs/mongoose
+-MDN - https://developer.mozilla.org/pt-BR/docs/Learn/Server-side/Express_Nodejs/mongoose
+
+-MongooseJS - https://mongoosejs.com/docs/schematypes.html
+
+-MongooseJS(working with dates) - https://mongoosejs.com/docs/tutorials/dates.html
+
+-Date.now()(StackOverflow) - https://stackoverflow.com/questions/35501273/what-is-the-difference-between-date-now-and-date-now-in-mongoose
 

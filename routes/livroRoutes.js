@@ -1,13 +1,12 @@
 const express = require('express');
+const router = express.Router();
 
 const livroController = require('../controllers/livroController');
 
-const router = express.Router();
-
 router.get('/livro', livroController.listar);
-router.get('/livro:id', livroController.buscarPorCodigo);
+router.get('/livro/:idLivro', livroController.buscarPorCodigo);
 router.post('/livro', livroController.salvar);
-router.put('/livro:id', livroController.atualizar);
-router.delete('/livro:id', livroController.excluir);
+router.put('/livro/:idLivro', livroController.atualizar);
+router.delete('/livro/:idLivro', livroController.remover);
 
 module.exports = router;

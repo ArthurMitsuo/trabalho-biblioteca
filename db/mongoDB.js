@@ -1,5 +1,7 @@
 const mongoose = require('mongoose');
 
+//Cria a conexão com o banco de dados do MongoDB em localhost e exporta a conexão para os outros módulos
+
 //deixando 0.0.0.0 funcionou. Usando como localhost estava dando timeout;
 const url = 'mongodb://0.0.0.0:27017/meubanco'; 
 const db = mongoose.connect(url, {
