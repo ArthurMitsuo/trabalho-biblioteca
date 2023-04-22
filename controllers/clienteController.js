@@ -27,6 +27,8 @@ class ClienteController {
     }
 
     async atualizar(req, res){
+        //método que estava nos slides, verificar após
+        
         const pessoa = req.body;
         const indice = clientes.findIndex(p => p.id == req.params.id);
         if(indice >= 0){

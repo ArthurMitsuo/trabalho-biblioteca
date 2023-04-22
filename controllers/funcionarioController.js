@@ -27,7 +27,13 @@ class FuncionarioController{
     }
 
     async atualizar(req, res){
-
+        const id = req.params.idFuncionario;
+        //_id é o id automaticamente gerado pelo mongo
+        const _id = String((await funcionarioModel.findOne({'id':id}))._id);
+        let produto = req.body;
+        //método findByInAndUpdate precisa do id gerado pelo mongo, para buscar e atualizar
+        await funcionarioModel.findByIdAndUpdate(String(_id), produto);
+        res.status(200).send('Atualizado!');
     }
 
     async remover(req, res){

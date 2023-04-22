@@ -34,7 +34,7 @@ class LocacaoController{
         let produto = req.body;
         //método findByInAndUpdate precisa do id gerado pelo mongo, para buscar e atualizar
         await locacaoModel.findByIdAndUpdate(String(_id), produto);
-        res.status(200).send();
+        res.status(200).send('Atualizado');
     }
 
     async remover(req, res){
