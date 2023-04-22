@@ -24,7 +24,7 @@ class LocacaoController{
         //pega o parâmetro passado na URL; recupero o parâmetro que estou passando para a constante
         const id = req.params.idLocacao;
         const resultado = await locacaoModel.findOne({'id': id});
-        res.status(201).send(resultado);
+        res.status(200).send(resultado);
     }
 
     async atualizar(req, res){
@@ -34,6 +34,7 @@ class LocacaoController{
         let produto = req.body;
         //método findByInAndUpdate precisa do id gerado pelo mongo, para buscar e atualizar
         await locacaoModel.findByIdAndUpdate(String(_id), produto);
+        res.status(200).send();
     }
 
     async remover(req, res){
