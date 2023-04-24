@@ -4,11 +4,11 @@ const funcionarioModel = require('../models/funcionarioModel');
 class FuncionarioController{
     async salvar(req, res){
         //variável abaixo pega o livro módel, tenta achar algo sem nenhum critério de busca, ordenando pelo id (-1 indica ser ordem decrescente)
-        const max = await funcionarioModel.findOne({}).sort({idFuncionario: -1});
+        const max = await funcionarioModel.findOne({}).sort({codigoFuncionario: -1});
 
         const funcionario = req.body;
         
-        funcionario.idfuncionario = max == null ? 1 : max.idFuncionario + 1;
+        funcionario.codigoFuncionario = max == null ? 1 : max.codigoFuncionario + 1;
 
         const resultado = await funcionarioModel.create(funcionario);
         
@@ -20,16 +20,16 @@ class FuncionarioController{
         res.status(201).json(resultado);
     }
 
-    async buscarPorId(req, res){
-        const id = req.params.idFuncionario;
-        const resultado = funcionarioModel.findOne({'id':id});
+    async buscarPorCodigo(req, res){
+        const codigo = req.params.codigoFuncionario;
+        const resultado = funcionarioModel.findOne({'codigo':codigo});
         res.status(201).send(resultado);
     }
 
     async atualizar(req, res){
-        const id = req.params.idFuncionario;
+        const codigo = req.params.codigoFuncionario;
         //_id é o id automaticamente gerado pelo mongo
-        const _id = String((await funcionarioModel.findOne({'id':id}))._id);
+        const _id = String((await funcionarioModel.findOne({'codigo':codigo}))._id);
         let produto = req.body;
         //método findByInAndUpdate precisa do id gerado pelo mongo, para buscar e atualizar
         await funcionarioModel.findByIdAndUpdate(String(_id), produto);
@@ -37,7 +37,13 @@ class FuncionarioController{
     }
 
     async remover(req, res){
-
+        const codigo = req.params.codigoFuncionario;
+        //_id é o id automaticamente gerado pelo mongo
+        const _id = String((await funcionarioModel.findOne({'codigo':codigo}))._id);
+        let produto = req.body;
+        //método findByInAndRemove precisa do id gerado pelo mongo, para buscar e atualizar
+        await funcionarioModel.findByIdAndRemove(String(_id));
+        res.status(200).send();
     }    
 }
 module.exports = new FuncionarioController();

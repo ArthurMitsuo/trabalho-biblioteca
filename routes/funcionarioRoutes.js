@@ -3,10 +3,10 @@ const router = express.Router();
 
 const funcionarioController = require('../controllers/funcionarioController');
 
-router.get('/funcionario', funcionarioController.listar);
-router.get('/funcionario/:idFuncionario', funcionarioController.buscarPorId);
-router.post('/funcionario', funcionarioController.salvar);
-router.put('/funcionario/:idFuncionario', funcionarioController.atualizar);
-router.delete('/funcionario/:idFuncionario', funcionarioController.remover);
+router.get('/', funcionarioController.listar);
+router.get('/:codigoFuncionario', funcionarioController.buscarPorCodigo);
+router.post('/', funcionarioController.salvar);
+router.put('/:codigoFuncionario', funcionarioController.atualizar);
+router.delete('/:codigoFuncionario', funcionarioController.remover);
 
 module.exports = router;

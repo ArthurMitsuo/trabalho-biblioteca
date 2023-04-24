@@ -1,0 +1,64 @@
+[
+{
+    "codigoCategoria": 1,
+    "nome": "Romance"
+},
+{
+    "codigoCategoria": 2,
+    "nome": "Terror"
+},
+{
+    "codigoCategoria": 3,
+    "nome": "Fantasia"
+},
+{
+    "codigoCategoria": 4,
+    "nome": "Sci-fi"
+},
+{
+    "codigoCategoria": 5,
+    "nome": "Clássica"
+},
+{
+    "codigoCategoria": 6,
+    "nome": "História"
+},
+{
+    "codigoCategoria": 7,
+    "nome": "Ciência"
+},
+{
+    "codigoCategoria": 8,
+    "nome": "Biologia"
+},
+
+{
+    "codigoCategoria": 9,
+    "nome": "Tecnologia"
+},
+
+{
+    "codigoCategoria": 10,
+    "nome": "Geografia"
+},
+
+{
+    "codigoCategoria": 11,
+    "nome": "Fotografia"
+},
+
+{
+    "codigoCategoria": 12,
+    "nome": "Matemática"
+},
+
+{
+    "codigoCategoria": 13,
+    "nome": "Física"
+},
+
+{
+    "codigoCategoria": 14,
+    "nome": "Química"
+}
+]

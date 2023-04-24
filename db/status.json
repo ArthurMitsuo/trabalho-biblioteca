@@ -1,0 +1,20 @@
+[{
+    "codigoStatus": 1,
+    "nome": "Aberto"
+},
+{
+    "codigoStatus": 2,
+    "nome": "Fechado"
+},
+{
+    "codigoStatus": 3,
+    "nome": "Cancelado"
+},
+{
+    "codigoStatus": 4,
+    "nome": "Concluido"
+},
+{
+    "codigoStatus": 5,
+    "nome": "Aguardando"
+}]

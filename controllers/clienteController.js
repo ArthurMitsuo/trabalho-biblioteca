@@ -4,11 +4,11 @@ const clienteModel = require('../models/clienteModel');
 class ClienteController {
     async salvar(req, res){
         //variável abaixo pega o livro módel, tenta achar algo sem nenhum critério de busca, ordenando pelo id (-1 indica ser ordem decrescente)
-        const max = await clienteModel.findOne({}).sort({idCliente: -1});
+        const max = await clienteModel.findOne({}).sort({codigoCliente: -1});
 
         const cliente = req.body;
         
-        cliente.idcliente = max == null ? 1 : max.idCliente + 1;
+        cliente.codigoCliente = max == null ? 1 : max.codigoCliente + 1;
 
         const resultado = await clienteModel.create(cliente);
         
@@ -20,9 +20,9 @@ class ClienteController {
         res.status(200).json(resultado);
     }
 
-    async buscarPorId(req, res){
-    const id = req.params.idCliente;
-    const resultado = clienteModel.findOne({'id':id});
+    async buscarPorCodigo(req, res){
+    const codigo = req.params.codigoCliente;
+    const resultado = clienteModel.findOne({'codigo':codigo});
     res.status(201).send(resultado);
     }
 
@@ -30,7 +30,7 @@ class ClienteController {
         //método que estava nos slides, verificar após
         
         const pessoa = req.body;
-        const indice = clientes.findIndex(p => p.id == req.params.id);
+        const indice = clientes.findIndex(p => p.codigo == req.params.codigo);
         if(indice >= 0){
             clientes[indice] = pessoa;
         } else {
@@ -40,7 +40,7 @@ class ClienteController {
     }
 
     async remover(req, res){
-        const indice = clientes.findIndex(p => p.id == req.params.id);
+        const indice = clientes.findIndex(p => p.codigo == req.params.codigo);
         if(indice >= 0){
         clientes.splice(indice, 1);
         }

@@ -3,10 +3,10 @@ const router = express.Router();
 
 const clienteController = require('../controllers/clienteController');
 
-router.get('/clientes', clienteController.listar);
-router.get('/clientes/:idCliente', clienteController.buscarPorId);
-router.post('/clientes', clienteController.salvar);
-router.put('/clientes/:idCliente', clienteController.atualizar);
-router.delete('/clientes/:idCliente', clienteController.remover);
+router.get('/', clienteController.listar);
+router.get('/:codigoCliente', clienteController.buscarPorCodigo);
+router.post('/', clienteController.salvar);
+router.put('/:codigoCliente', clienteController.atualizar);
+router.delete('/:codigoCliente', clienteController.remover);
 
 module.exports = router;

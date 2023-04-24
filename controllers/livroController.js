@@ -5,15 +5,15 @@ class LivroController {
     async salvar(req, res){
         //Busca maior código no banco e gera novo código;
         //variável abaixo pega o livro módel, tenta achar algo sem nenhum critério de busca, ordenando pelo id (-1 indica ser ordem decrescente)
-        const max = await livroModel.findOne({}).sort({idLivro: -1});
+        const max = await livroModel.findOne({}).sort({codigoLivro: -1});
 
         const livro = req.body;
         
-        livro.idLivro = max == null ? 1 : max.idLivro + 1;
+        livro.codigoLivro = max == null ? 1 : max.codigoLivro + 1;
 
         const resultado = await livroModel.create(livro);
-
-        res.status(201).json(resultado);
+        console.log(res.status());
+        res.status(201).json(req.body);
     }
 
     async listar(req, res){
@@ -22,8 +22,8 @@ class LivroController {
     }
 
     async buscarPorCodigo(req, res){
-        const id = req.params.idLivro;
-        const resultado = await livroModel.findOne({'id': id});
+        const codigo = req.params.codigoLivro;
+        const resultado = await livroModel.findOne({'codigo': codigo});
         res.status(200).json(resultado);
     }
     
@@ -36,10 +36,13 @@ class LivroController {
     }
 
     async remover(req, res){
-        const codigo = req.params.codigo;
-        await livroModel.findOneAndDelete({'codigo': codigo});
-
-        res.status(200).send('Excluído!');
+        const codigo = req.params.codigoLivro;
+        //_id é o id automaticamente gerado pelo mongo
+        const _id = String((await livroModel.findOne({'codigo':codigo}))._id);
+        let produto = req.body;
+        //método findByInAndRemove precisa do id gerado pelo mongo, para buscar e atualizar
+        await livroModel.findByIdAndRemove(String(_id));
+        res.status(200).send();
     }
 }
 module.exports = new LivroController();    

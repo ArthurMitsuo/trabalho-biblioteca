@@ -8,3 +8,6 @@ Links úteis:
 
 -Date.now()(StackOverflow) - https://stackoverflow.com/questions/35501273/what-is-the-difference-between-date-now-and-date-now-in-mongoose
 
+-Vídeo de ajuda, Controllers e Models (1:08:00) - https://www.youtube.com/watch?v=pAOjezQw5hM&list=PLfqtDthdyWq7xbgrZXhUfxhgd2Ye94xLL&index=12
+
+-Vídeo de ajuda, Relacional com MongoDG, separação de Schema - https://www.youtube.com/watch?v=tzH8ClIge_E&t=1s
