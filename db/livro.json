@@ -1,0 +1,55 @@
+[{
+    "codigoLivro": 1,
+    "nome": "Aberto1",
+    "autor": "Aberto Ferrari",
+    "sinopse": "Aberto654654654645",
+    "editora": "Aberto654654654645",
+    "paginas": "500",
+    "quantidade": "6",
+    "dataPublicacao": "02/07/2000",
+    "codigoCategoria": "6445e560fd5a75933370ec60"
+},
+{
+    "codigoLivro": 2,
+    "nome": "Aberto2",
+    "autor": "Aberto Figueira",
+    "sinopse": "Aberto159159195",
+    "editora": "Aberto654654654645",
+    "paginas": "750",
+    "quantidade": "3",
+    "dataPublicacao": "06/05/2001",
+    "codigoCategoria": "6445e560fd5a75933370ec65"
+},
+{
+    "codigoLivro": 3,
+    "nome": "Aberto da silva",
+    "autor": "Aberto da silva",
+    "sinopse": "Aberto898498745165",
+    "editora": "Aberto654654654645",
+    "paginas": "150",
+    "quantidade": "15",
+    "dataPublicacao": "12/02/1998",
+    "codigoCategoria": "6445e560fd5a75933370ec65"
+},
+{
+    "codigoLivro": 4,
+    "nome": "Abertuod",
+    "autor": "Aberto alberto",
+    "sinopse": "Aberto1891981611",
+    "editora": "Aberto654654654645",
+    "paginas": "436",
+    "quantidade": "7",
+    "dataPublicacao": "12/12/2012",
+    "codigoCategoria": "6445e560fd5a75933370ec63"
+},
+{
+    "codigoLivro": 5,
+    "nome": "AbertoAlvresPereira",
+    "autor": "Aberto Lumi",
+    "sinopse": "Aberto16291612346984",
+    "editora": "Aberto654654654645",
+    "paginas": "1026",
+    "quantidade": "1",
+    "dataPublicacao": "03/08/2022",
+    "codigoCategoria": "6445e560fd5a75933370ec64"
+}]

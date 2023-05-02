@@ -22,14 +22,14 @@ class FuncionarioController{
 
     async buscarPorCodigo(req, res){
         const codigo = req.params.codigoFuncionario;
-        const resultado = funcionarioModel.findOne({'codigo':codigo});
+        const resultado = funcionarioModel.findOne({'codigoFuncionario':codigo});
         res.status(201).send(resultado);
     }
 
     async atualizar(req, res){
         const codigo = req.params.codigoFuncionario;
         //_id é o id automaticamente gerado pelo mongo
-        const _id = String((await funcionarioModel.findOne({'codigo':codigo}))._id);
+        const _id = String((await funcionarioModel.findOne({'codigoFuncionario':codigo}))._id);
         let produto = req.body;
         //método findByInAndUpdate precisa do id gerado pelo mongo, para buscar e atualizar
         await funcionarioModel.findByIdAndUpdate(String(_id), produto);
@@ -39,7 +39,7 @@ class FuncionarioController{
     async remover(req, res){
         const codigo = req.params.codigoFuncionario;
         //_id é o id automaticamente gerado pelo mongo
-        const _id = String((await funcionarioModel.findOne({'codigo':codigo}))._id);
+        const _id = String((await funcionarioModel.findOne({'codigoFuncionario':codigo}))._id);
         let produto = req.body;
         //método findByInAndRemove precisa do id gerado pelo mongo, para buscar e atualizar
         await funcionarioModel.findByIdAndRemove(String(_id));

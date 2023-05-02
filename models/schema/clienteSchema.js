@@ -15,7 +15,7 @@ const clienteSchema = new Schema({
     bairro: {type: String, uppercase: true},
     cidade: {type: String, uppercase: true},
     estado: {type: String, uppercase: true},
-    dataNascimento: {type: Date, required: [true, "Data Nascimento é obrigatória"]},
+    dataNascimento: {type: String, required: [true, "Data Nascimento é obrigatória"]},
     dataCadastro: {type: Date, default: Date.now()}
 });
 

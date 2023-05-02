@@ -9,7 +9,7 @@ const funcionarioSchema = new Schema({
     cpfFuncionario: {type: String, required: [true, "CPF é obrigatório"]},
     nome: {type: String, required: [true, "Nome é obrigatório"], uppercase: true},
     sobrenome: {type: String, required: [true, "Sobrenome é obrigatório"], uppercase: true},
-    dataNascimento: {type: Date, required: [true, "Data de Nascimento é obrigatório"]},
+    dataNascimento: {type: String, required: [true, "Data de Nascimento é obrigatório"]},
     cep: {type: String, required: [true, "CEP é obrigatório"]},
     endereco: {type: String, uppercase: true},
     bairro: {type: String, uppercase: true},

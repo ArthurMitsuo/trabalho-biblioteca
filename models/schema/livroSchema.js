@@ -12,7 +12,7 @@ const livroSchema = new Schema({
     paginas: {type: Number, required: [true, "Quantidade de páginas é obrigatório"], min: 1},
     quantidade: {type: Number, required: [true, "Quantidade disponível é obrigatório"]},
     editora: {type: String, required: [true, "Editora é obrigatório"], uppercase: true},
-    dataPublicacao: Date,
+    dataPublicacao: {type: String, required: [true, "Data da publicação é obrigatório"]},
     dataCadastro: { type: Date, required: [true, "Data do cadastro é obrigatório"], default: Date.now() },
     codigoCategoria: {type: mongoose.Schema.Types.ObjectId, ref: 'categoria'} 
 });

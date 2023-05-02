@@ -23,14 +23,14 @@ class LocacaoController{
     async buscarPorCodigo(req, res){
         //pega o parâmetro passado na URL; recupero o parâmetro que estou passando para a constante
         const codigo = req.params.codigoLocacao;
-        const resultado = await locacaoModel.findOne({'codigo': codigo});
+        const resultado = await locacaoModel.findOne({'codigoLocacao': codigo});
         res.status(200).json(resultado);
     }
 
     async atualizar(req, res){
         const codigo = req.params.codigoLocacao;
         //_id é o id automaticamente gerado pelo mongo
-        const _id = String((await locacaoModel.findOne({'codigo':codigo}))._id);
+        const _id = String((await locacaoModel.findOne({'codigoLocacao':codigo}))._id);
         let produto = req.body;
         //método findByInAndUpdate precisa do id gerado pelo mongo, para buscar e atualizar
         await locacaoModel.findByIdAndUpdate(String(_id), produto);
@@ -40,7 +40,7 @@ class LocacaoController{
     async remover(req, res){
         const codigo = req.params.codigoLocacao;
         //_id é o id automaticamente gerado pelo mongo
-        const _id = String((await locacaoModel.findOne({'codigo':codigo}))._id);
+        const _id = String((await locacaoModel.findOne({'codigoLocaca':codigo}))._id);
         let produto = req.body;
         //método findByInAndRemove precisa do id gerado pelo mongo, para buscar e atualizar
         await locacaoModel.findByIdAndRemove(String(_id));

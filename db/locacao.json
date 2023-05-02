@@ -1,0 +1,290 @@
+[{   
+    "codigoLocacao": 1,
+    "cliente": {
+        "codigoCliente": 1,
+        "cpfCliente": "000000000-00",
+        "nome": "Aberto Ferrari II",
+        "sobrenome": "Aberto654654654645",
+        "cep": "0202202",
+        "endereço": "6",
+        "numero": "02/07/2000",
+        "bairro": "6445e560fd5a75933370ec60",
+        "cidade": "6445e560fd5a75933370ec60",
+        "estado": "6445e560fd5a75933370ec60",
+        "dataNascimento": "6445e560fd5a75933370ec60"
+    },
+    "livros": [
+        {
+            "_id": "64506422edfe9dd029d62b03",
+            "codigoLivro": 1,
+            "nome": "Aberto1",
+            "autor": "Aberto Ferrari",
+            "sinopse": "Aberto654654654645",
+            "editora": "Aberto654654654645",
+            "paginas": "500",
+            "quantidade": "6",
+            "dataPublicacao": "02/07/2000",
+            "codigoCategoria": "6445e560fd5a75933370ec60" 
+        },
+        {
+            "_id": "6450643fedfe9dd029d62b0c",
+            "codigoLivro": 4,
+            "nome": "Abertuod",
+            "autor": "Aberto alberto",
+            "sinopse": "Aberto1891981611",
+            "editora": "Aberto654654654645",
+            "paginas": "436",
+            "quantidade": "7",
+            "dataPublicacao": "12/12/2012",
+            "codigoCategoria": "6445e560fd5a75933370ec63"
+        }
+    ],
+    "dataDevolucao": "0202202",
+    "funcionario": {
+        "_id": "645064b0edfe9dd029d62b2d",
+        "codigoFuncionario": 5,
+        "cpfFuncionario": "000000000-04",
+        "nome": "Aberto Lumi IIV",
+        "sobrenome": "Aberto16291612346984",
+        "dataNascimento": "6445e560fd5a75933370ec60",
+        "cep": "0202202",
+        "endereço": "1",
+        "numero": "03/08/2022",
+        "bairro": "6445e560fd5a75933370ec64",
+        "cidade": "6445e560fd5a75933370ec60",
+        "estado": "6445e560fd5a75933370ec60"
+    },
+    "statusId": "6445e560fd5a75933370ec5b"  
+},
+{
+    "codigoLocacao": 2,
+    "cliente": {
+        "codigoCliente": 1,
+        "cpfCliente": "000000000-00",
+        "nome": "Aberto Ferrari II",
+        "sobrenome": "Aberto654654654645",
+        "cep": "0202202",
+        "endereço": "6",
+        "numero": "02/07/2000",
+        "bairro": "6445e560fd5a75933370ec60",
+        "cidade": "6445e560fd5a75933370ec60",
+        "estado": "6445e560fd5a75933370ec60",
+        "dataNascimento": "6445e560fd5a75933370ec60"
+    },
+    "livros": [
+        {
+            "_id": "64506422edfe9dd029d62b03",
+            "codigoLivro": 1,
+            "nome": "Aberto1",
+            "autor": "Aberto Ferrari",
+            "sinopse": "Aberto654654654645",
+            "editora": "Aberto654654654645",
+            "paginas": "500",
+            "quantidade": "6",
+            "dataPublicacao": "02/07/2000",
+            "codigoCategoria": "6445e560fd5a75933370ec60" 
+        },
+        {
+            "_id": "6450643fedfe9dd029d62b0c",
+            "codigoLivro": 4,
+            "nome": "Abertuod",
+            "autor": "Aberto alberto",
+            "sinopse": "Aberto1891981611",
+            "editora": "Aberto654654654645",
+            "paginas": "436",
+            "quantidade": "7",
+            "dataPublicacao": "12/12/2012",
+            "codigoCategoria": "6445e560fd5a75933370ec63"
+        }
+    ],
+    "dataDevolucao": "0202202",
+    "funcionario": {
+        "_id": "645064b0edfe9dd029d62b2d",
+        "codigoFuncionario": 5,
+        "cpfFuncionario": "000000000-04",
+        "nome": "Aberto Lumi IIV",
+        "sobrenome": "Aberto16291612346984",
+        "dataNascimento": "6445e560fd5a75933370ec60",
+        "cep": "0202202",
+        "endereço": "1",
+        "numero": "03/08/2022",
+        "bairro": "6445e560fd5a75933370ec64",
+        "cidade": "6445e560fd5a75933370ec60",
+        "estado": "6445e560fd5a75933370ec60"
+    },
+    "statusId": "6445e560fd5a75933370ec5b"
+},
+{
+    "codigoLocacao": 3,
+    "cliente": {
+        "codigoCliente": 1,
+        "cpfCliente": "000000000-00",
+        "nome": "Aberto Ferrari II",
+        "sobrenome": "Aberto654654654645",
+        "cep": "0202202",
+        "endereço": "6",
+        "numero": "02/07/2000",
+        "bairro": "6445e560fd5a75933370ec60",
+        "cidade": "6445e560fd5a75933370ec60",
+        "estado": "6445e560fd5a75933370ec60",
+        "dataNascimento": "6445e560fd5a75933370ec60"
+    },
+    "livros": [
+        {
+            "_id": "64506422edfe9dd029d62b03",
+            "codigoLivro": 1,
+            "nome": "Aberto1",
+            "autor": "Aberto Ferrari",
+            "sinopse": "Aberto654654654645",
+            "editora": "Aberto654654654645",
+            "paginas": "500",
+            "quantidade": "6",
+            "dataPublicacao": "02/07/2000",
+            "codigoCategoria": "6445e560fd5a75933370ec60" 
+        },
+        {
+            "_id": "6450643fedfe9dd029d62b0c",
+            "codigoLivro": 4,
+            "nome": "Abertuod",
+            "autor": "Aberto alberto",
+            "sinopse": "Aberto1891981611",
+            "editora": "Aberto654654654645",
+            "paginas": "436",
+            "quantidade": "7",
+            "dataPublicacao": "12/12/2012",
+            "codigoCategoria": "6445e560fd5a75933370ec63"
+        }
+    ],
+    "dataDevolucao": "0202202",
+    "funcionario": {
+        "_id": "645064b0edfe9dd029d62b2d",
+        "codigoFuncionario": 5,
+        "cpfFuncionario": "000000000-04",
+        "nome": "Aberto Lumi IIV",
+        "sobrenome": "Aberto16291612346984",
+        "dataNascimento": "6445e560fd5a75933370ec60",
+        "cep": "0202202",
+        "endereço": "1",
+        "numero": "03/08/2022",
+        "bairro": "6445e560fd5a75933370ec64",
+        "cidade": "6445e560fd5a75933370ec60",
+        "estado": "6445e560fd5a75933370ec60"
+    },
+    "statusId": "6445e560fd5a75933370ec5b"
+},
+{
+    "codigoLocacao": 4,
+    "cliente": {
+        "codigoCliente": 1,
+        "cpfCliente": "000000000-00",
+        "nome": "Aberto Ferrari II",
+        "sobrenome": "Aberto654654654645",
+        "cep": "0202202",
+        "endereço": "6",
+        "numero": "02/07/2000",
+        "bairro": "6445e560fd5a75933370ec60",
+        "cidade": "6445e560fd5a75933370ec60",
+        "estado": "6445e560fd5a75933370ec60",
+        "dataNascimento": "6445e560fd5a75933370ec60"
+    },
+    "livros": [
+        {
+            "_id": "64506422edfe9dd029d62b03",
+            "codigoLivro": 1,
+            "nome": "Aberto1",
+            "autor": "Aberto Ferrari",
+            "sinopse": "Aberto654654654645",
+            "editora": "Aberto654654654645",
+            "paginas": "500",
+            "quantidade": "6",
+            "dataPublicacao": "02/07/2000",
+            "codigoCategoria": "6445e560fd5a75933370ec60" 
+        },
+        {
+            "_id": "6450643fedfe9dd029d62b0c",
+            "codigoLivro": 4,
+            "nome": "Abertuod",
+            "autor": "Aberto alberto",
+            "sinopse": "Aberto1891981611",
+            "editora": "Aberto654654654645",
+            "paginas": "436",
+            "quantidade": "7",
+            "dataPublicacao": "12/12/2012",
+            "codigoCategoria": "6445e560fd5a75933370ec63"
+        }
+    ],
+    "dataDevolucao": "0202202",
+    "funcionario": {
+        "_id": "645064b0edfe9dd029d62b2d",
+        "codigoFuncionario": 5,
+        "cpfFuncionario": "000000000-04",
+        "nome": "Aberto Lumi IIV",
+        "sobrenome": "Aberto16291612346984",
+        "dataNascimento": "6445e560fd5a75933370ec60",
+        "cep": "0202202",
+        "endereço": "1",
+        "numero": "03/08/2022",
+        "bairro": "6445e560fd5a75933370ec64",
+        "cidade": "6445e560fd5a75933370ec60",
+        "estado": "6445e560fd5a75933370ec60"
+    },
+    "statusId": "6445e560fd5a75933370ec5b"
+},
+{
+    "codigoLocacao": 5,
+    "cliente": {
+        "codigoCliente": 1,
+        "cpfCliente": "000000000-00",
+        "nome": "Aberto Ferrari II",
+        "sobrenome": "Aberto654654654645",
+        "cep": "0202202",
+        "endereço": "6",
+        "numero": "02/07/2000",
+        "bairro": "6445e560fd5a75933370ec60",
+        "cidade": "6445e560fd5a75933370ec60",
+        "estado": "6445e560fd5a75933370ec60",
+        "dataNascimento": "6445e560fd5a75933370ec60"
+    },
+    "livros": [
+        {
+            "_id": "64506422edfe9dd029d62b03",
+            "codigoLivro": 1,
+            "nome": "Aberto1",
+            "autor": "Aberto Ferrari",
+            "sinopse": "Aberto654654654645",
+            "editora": "Aberto654654654645",
+            "paginas": "500",
+            "quantidade": "6",
+            "dataPublicacao": "02/07/2000",
+            "codigoCategoria": "6445e560fd5a75933370ec60" 
+        },
+        {
+            "_id": "6450643fedfe9dd029d62b0c",
+            "codigoLivro": 4,
+            "nome": "Abertuod",
+            "autor": "Aberto alberto",
+            "sinopse": "Aberto1891981611",
+            "editora": "Aberto654654654645",
+            "paginas": "436",
+            "quantidade": "7",
+            "dataPublicacao": "12/12/2012",
+            "codigoCategoria": "6445e560fd5a75933370ec63"
+        }
+    ],
+    "dataDevolucao": "0202202",
+    "funcionario": {
+        "_id": "645064b0edfe9dd029d62b2d",
+        "codigoFuncionario": 5,
+        "cpfFuncionario": "000000000-04",
+        "nome": "Aberto Lumi IIV",
+        "sobrenome": "Aberto16291612346984",
+        "dataNascimento": "6445e560fd5a75933370ec60",
+        "cep": "0202202",
+        "endereço": "1",
+        "numero": "03/08/2022",
+        "bairro": "6445e560fd5a75933370ec64",
+        "cidade": "6445e560fd5a75933370ec60",
+        "estado": "6445e560fd5a75933370ec60"
+    },
+    "statusId": "6445e560fd5a75933370ec5b"
+}]

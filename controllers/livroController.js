@@ -23,7 +23,7 @@ class LivroController {
 
     async buscarPorCodigo(req, res){
         const codigo = req.params.codigoLivro;
-        const resultado = await livroModel.findOne({'codigo': codigo});
+        const resultado = await livroModel.findOne({'codigoLivro': codigo});
         res.status(200).json(resultado);
     }
     
