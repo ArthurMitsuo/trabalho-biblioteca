@@ -3,6 +3,8 @@ const categoriaModel = require('../models/categoriaModel');
 
 class CategoriaController {
     async salvar(req, res){
+        //Busca maior código no banco e gera novo código;
+        //variável abaixo pega o livro módel, tenta achar algo sem nenhum critério de busca, ordenando pelo id (-1 indica ser ordem decrescente)
         const max = await categoriaModel.findOne({}).sort({codigoCategoria: -1});
 
         const categoria = req.body;
@@ -37,9 +39,9 @@ class CategoriaController {
         const codigoCategoria = req.params.codigoCategoria;
         //_id é o id automaticamente gerado pelo mongo
         const _id = String((await livroModel.findOne({'codigoCategoria':codigoCategoria}))._id);
-        let produto = req.body;
+        let categoria = req.body;
         //método findByInAndRemove precisa do id gerado pelo mongo, para buscar e atualizar
-        await statusModel.findByIdAndRemove(String(_id));
+        await categoriaModel.findByIdAndRemove(String(_id));
         res.status(200).send();
     }
 }

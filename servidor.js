@@ -1,6 +1,7 @@
 require('./db/mongoDB');
 const express = require('express');
 const mongoose = require('mongoose');
+const cors = require('cors');
 
 //Importando os routes
 const livroRouter = require('./routes/livroRoutes');
@@ -13,14 +14,14 @@ const locacaoRouter = require('./routes/locacaoRoutes');
 
 //definindo a constante srv como instância do objeto requerido do express
 const srv = express();
-
+srv.use(cors());
 srv.use(express.json());
 
 //Solicitando que o servidor utilize os routers conforme os valor pós / na URL
 srv.use('/', indexRouter);
 srv.use('/livros', livroRouter);
 srv.use('/clientes', clienteRouter);
-srv.use('/funcionario', funcionarioRouter);
+srv.use('/funcionarios', funcionarioRouter);
 srv.use('/status', statusRouter);
 srv.use('/categorias', categoriaRouter);
 srv.use('/locacao', locacaoRouter);

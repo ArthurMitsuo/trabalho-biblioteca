@@ -13,7 +13,7 @@ class LivroController {
 
         const resultado = await livroModel.create(livro);
         console.log(res.status());
-        res.status(201).json(req.body);
+        res.status(201).json(livro);
     }
 
     async listar(req, res){
@@ -39,7 +39,7 @@ class LivroController {
         const codigoLivro  = req.params.codigoLivro;
         //_id é o id automaticamente gerado pelo mongo
         const _id = String((await livroModel.findOne({'codigoLivro ':codigoLivro }))._id);
-        let produto = req.body;
+        
         //método findByInAndRemove precisa do id gerado pelo mongo, para buscar e atualizar
         await livroModel.findByIdAndRemove(String(_id));
         res.status(200).send();
