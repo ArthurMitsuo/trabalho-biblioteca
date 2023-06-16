@@ -40,8 +40,7 @@ class LocacaoController{
     async remover(req, res){
         const codigo = req.params.codigoLocacao;
         //_id é o id automaticamente gerado pelo mongo
-        const _id = String((await locacaoModel.findOne({'codigoLocaca':codigo}))._id);
-        let produto = req.body;
+        const _id = String((await locacaoModel.findOne({'codigoLocacao':codigo}))._id);
         //método findByInAndRemove precisa do id gerado pelo mongo, para buscar e atualizar
         await locacaoModel.findByIdAndRemove(String(_id));
         res.status(200).send();

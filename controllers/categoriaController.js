@@ -38,7 +38,7 @@ class CategoriaController {
     async remover(req, res){
         const codigoCategoria = req.params.codigoCategoria;
         //_id é o id automaticamente gerado pelo mongo
-        const _id = String((await livroModel.findOne({'codigoCategoria':codigoCategoria}))._id);
+        const _id = String((await categoriaModel.findOne({'codigoCategoria':codigoCategoria}))._id);
         let categoria = req.body;
         //método findByInAndRemove precisa do id gerado pelo mongo, para buscar e atualizar
         await categoriaModel.findByIdAndRemove(String(_id));

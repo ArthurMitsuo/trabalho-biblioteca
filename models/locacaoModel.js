@@ -14,7 +14,7 @@ const locacaoSchema = new Schema({
     dataLocacao: { type: Date, default: Date.now() },
     dataDevolucao: { type: String, required: [true, "Data de devolução é obrigatório"] },
     funcionario: funcionarioSchema,
-    statusId: {type: mongoose.Schema.Types.ObjectId, ref : 'status'}
+    statusId: {type: mongoose.Schema.Types.ObjectId, ref : 'status'}  
 });
 
 //Cria o modelo

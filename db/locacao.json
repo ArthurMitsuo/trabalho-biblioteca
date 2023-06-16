@@ -54,7 +54,7 @@
         "cidade": "6445e560fd5a75933370ec60",
         "estado": "6445e560fd5a75933370ec60"
     },
-    "statusId": "6445e560fd5a75933370ec5b"  
+    "codigoStatus": "6445e560fd5a75933370ec5b"  
 },
 {
     "codigoLocacao": 2,
@@ -112,7 +112,7 @@
         "cidade": "6445e560fd5a75933370ec60",
         "estado": "6445e560fd5a75933370ec60"
     },
-    "statusId": "6445e560fd5a75933370ec5b"
+    "codigoStatus": "6445e560fd5a75933370ec5b"
 },
 {
     "codigoLocacao": 3,
@@ -170,7 +170,7 @@
         "cidade": "6445e560fd5a75933370ec60",
         "estado": "6445e560fd5a75933370ec60"
     },
-    "statusId": "6445e560fd5a75933370ec5b"
+    "codigoStatus": "6445e560fd5a75933370ec5b"
 },
 {
     "codigoLocacao": 4,
@@ -228,7 +228,7 @@
         "cidade": "6445e560fd5a75933370ec60",
         "estado": "6445e560fd5a75933370ec60"
     },
-    "statusId": "6445e560fd5a75933370ec5b"
+    "codigoStatus": "6445e560fd5a75933370ec5b"
 },
 {
     "codigoLocacao": 5,
@@ -286,5 +286,5 @@
         "cidade": "6445e560fd5a75933370ec60",
         "estado": "6445e560fd5a75933370ec60"
     },
-    "statusId": "6445e560fd5a75933370ec5b"
+    "codigoStatus": "6445e560fd5a75933370ec5b"
 }]

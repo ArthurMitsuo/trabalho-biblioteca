@@ -28,7 +28,7 @@ class StatusController {
     }
     
     async atualizar(req, res){
-        const codigoStatus = req.params.codigo;
+        const codigoStatus = req.params.codigoStatus;
         const status = req.body;
         //Para obter resultado usar , {new: true} após o código;
         await statusModel.findOneAndUpdate({'codigoStatus': codigoStatus}, status);
@@ -38,7 +38,7 @@ class StatusController {
     async remover(req, res){
         const codigoStatus = req.params.codigoStatus;
         //_id é o id automaticamente gerado pelo mongo
-        const _id = String((await livroModel.findOne({'codigoStatus':codigoStatus}))._id);
+        const _id = String((await statusModel.findOne({'codigoStatus':codigoStatus}))._id);
         let produto = req.body;
         //método findByInAndRemove precisa do id gerado pelo mongo, para buscar e atualizar
         await statusModel.findByIdAndRemove(String(_id));
